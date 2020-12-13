@@ -1,0 +1,30 @@
+/* Reset css */
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* background */
+
+
+/* tieu de */
+
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+input[type=text]:focus {
+    background-color: lightblue;
+}
+
+select {
+    width: 100%;
+    padding: 16px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+}

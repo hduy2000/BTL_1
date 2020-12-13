@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+body {
+    min-height: 100vh;
+    background-image: linear-gradient(120deg, #3498db, #8e44ad)
+}
+
+body .login-form {
+    width: 360px;
+    background: #f1f1f1;
+    height: 400px;
+    padding: 80px 40px;
+    border-radius: 10px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%)
+}
+
+body .login-form h1 {
+    text-align: center;
+    margin-bottom: 60px
+}
+
+body .txtb {
+    border-bottom: 2px solid #adadad;
+    position: relative;
+    margin: 30px 0
+}
+
+body .txtb input {
+    font-size: 15px;
+    color: #333;
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    background: none
+}
+
+body .txtb span::before {
+    content: attr(data-placeholder);
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    z-index: -1
+}
+
+body .txtb span::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: linear-gradient(120deg, #3498db, #8e44ad);
+    transition: .5s
+}
+
+body .focus+span::before {
+    top: -5px
+}
+
+body .focus+span::after {
+    width: 100%
+}
+
+body .logbtn {
+    color: #fff;
+    display: block;
+    width: 100%;
+    height: 50px;
+    border: none;
+    background: linear-gradient(120deg, #3498db, #8e44ad);
+    background-size: 120%;
+    cursor: pointer;
+    transition: .5s;
+    outline: none;
+    font-size: 18px
+}
+
+body .logbtn:hover {
+    background-position: right
+}
+
+body .bottom-text {
+    margin-top: 60px;
+    text-align: center;
+    font-style: 13px
+}
+
+/*# sourceMappingURL=style.css.map */
