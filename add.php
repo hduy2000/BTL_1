@@ -83,9 +83,11 @@
 </html>
 <?php 
 	
-	require 'connect.php';
-		
-	if (isset($_POST["update_user"])){
+	include_once 'connect.php';
+	session_start();
+	if (isset($_SESSION['username'])) {
+		# code...
+		if (isset($_POST["update_user"])){
 		$magv= $_POST['magv'];
 		$username = $_POST['username'];
 		$query = "SELECT * FROM `user` WHERE magv = '$magv' or username='$username'";
@@ -118,10 +120,11 @@
         		echo "Error: " . $sql . "<br>" . $conn->error;
     		}
 		}
-	
-
-//Đóng database
-$conn->close();
+		}
 	}
+	else{
+		header('location:login.php');
+	}
+	
 	
  ?>

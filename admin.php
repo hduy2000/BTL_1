@@ -63,6 +63,7 @@
     <div class="container">
         <a href="./add.php" class="btn btn-info">Thêm giảng viên</a>
         <a href="qlgt.php" class="btn btn-info">Quản lý giáo trình</a>
+        <a href="quan_ly_de_tai.php" class="btn btn-info">Quản lý đề tài</a>
         <a href="logout.php" class="btn btn-info">Đăng xuất</a>
         <h2>Search User</h2>
 

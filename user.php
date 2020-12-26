@@ -65,7 +65,7 @@
                 </div>
             </div>
             <a style="margin: 0 0 0 15px;" href="giaotrinh.php?id=<?php echo $id ?>" type="button" class="btn btn-info">Quản lý giáo trình</a>
-    
+            <a  href="detai.php?id=<?php echo $id ?>" type="button" class="btn btn-info">Quản lý đề tài</a>
             <a href="suathongtin.php?id=<?php  echo $id ?>" type="button" class="btn btn-info">Sửa thông tin</a>
             <a href="themdetai.php?id=<?php echo $id ?>" type="button" class="btn btn-info">Thêm đề tài</a>
             <a href="xl_logout.php" type="button" class="btn btn-info">Đăng xuất</a>
