@@ -35,6 +35,7 @@
 			<div class="form-group">        
 				<div class="col-sm-offset-2 col-sm-10">
 					<input type="submit" name="add_detai" class="btn btn-success" value="Thêm" required>
+					<a href="javascript:history.back()" class="btn btn-success">Trở lại</a>
 				</div>
 			</div>
 		</form>
@@ -46,7 +47,6 @@
 <?php 
 
 	$id = $_GET['id'];
-	echo $id;
 	include_once 'connect.php';
 	if(isset($_POST["add_detai"])){
 		$name = $_POST['name'];

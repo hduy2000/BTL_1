@@ -36,6 +36,7 @@
 <body>
 	<div class="container">
 		<h2>Quản lý đề tài</h2>
+		<a href="javascript:history.back()" class="btn btn-success">Trở lại</a>
 		<div class="container-table">
 			<table class="table table-striped " >
 				<thead class="thead-table">

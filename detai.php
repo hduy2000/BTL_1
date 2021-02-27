@@ -31,9 +31,10 @@
  </head>
  <body>
  	<div class="container">
-		<h2>quản lý đề tài</h2>
-		<a class="btn btn-primary" href="./themdetai_user.php?id=<?php echo $id ?>">Thêm đề tài</a>	
-		<br>
+		<h2 style="color: #fff">quản lý đề tài</h2>
+		<a class="btn btn-primary"  href="./themdetai_user.php?id=<?php echo $id ?>">Thêm đề tài</a>	
+		
+		<a href="javascript:history.back()" class="btn btn-primary">Trở lại</a>
 		<form action="" method="POST" class="form-inline" style="margin-top:20px ">
             
             <input name="search" class="form-control form-control-sm ml-3 w-75" type="text" placeholder="Search"

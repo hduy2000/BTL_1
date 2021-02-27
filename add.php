@@ -17,6 +17,7 @@
 	
 		<div class="container">
 				<h2>Thêm giảng viên</h2>
+
 				<form name="form-add"  action="" method="POST" class="form-horizontal">
 					<div class="form-group">
 						<label class="control-label col-sm-2" for="magv">Mã giảng viên:</label> 
@@ -72,6 +73,7 @@
 					<div class="form-group">        
 						<div class="col-sm-offset-2 col-sm-10">
 							<input type="submit" name="update_user" class="btn btn-success" value="Lưu" required>
+							<a href="javascript:history.back()" class="btn btn-success">Trở lại</a>
 						</div>
 					</div>
 				</form>

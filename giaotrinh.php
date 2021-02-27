@@ -27,9 +27,9 @@
 </head>
 <body>
 	<div class="container">
-		<h2>quản lý giáo trình</h2>
+		<h2 style="color: #fff">quản lý giáo trình</h2>
 		<a class="btn btn-primary" href="./themgiaotrinh_user.php?id=<?php echo $id ?>">Thêm giáo trình</a>	
-		<br>
+		<a href="javascript:history.back()" class="btn btn-primary">Trở lại</a>
 		<div class="container-table">
 			<table class="table table-striped">
 				<thead class="thead-table">

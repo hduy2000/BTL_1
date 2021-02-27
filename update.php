@@ -23,6 +23,7 @@ $row=mysqli_fetch_assoc($result);
     
     <div class="container">
         <h2>Sửa thành viên</h2>
+        <a href="javascript:history.back()" class="btn btn-primary">Trở lại</a>
         <form method="POST" class="form-horizontal" enctype="multipart/form-data" action="xl_update.php?magv=<?php echo "$row[magv]" ?>">
             <br>
             <label for="id">Mã giảng viên:</label>
@@ -54,6 +55,7 @@ $row=mysqli_fetch_assoc($result);
             <input type="text" value="<?php echo $row['password']; ?>" name="password"><br />
 
 			<input type="submit" name="update_user" class="btn btn-success" value="Lưu" >
+
 			
         </form>
     </div>

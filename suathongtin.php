@@ -123,7 +123,7 @@
 		                <?php if(isset($message)) { echo $message; } ?>
 		            	</div>
 		                <tr>
-		                    <td colspan="2"><input class="btn btn-primary" type="submit" name="submit" value="Submit" class="btnSubmit"></td>
+		                    <td colspan="2"><input class="btn btn-primary" type="submit" name="submit" value="Lưu" class="btnSubmit"></td>
 		                </tr>
 		            </table>
 		        </div>
