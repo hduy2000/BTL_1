@@ -3,6 +3,18 @@
 	$id = $_GET['id'];
 	$query = "SELECT * FROM `qlgt` WHERE magv='$id'";
 	$result = mysqli_query($conn, $query);
+	if(!empty($_POST['search'])){
+
+        // Lay du lieu tren form search
+        $searchValue = $_POST['search'];
+        $query = "SELECT * FROM `quan_ly_de_tai` WHERE name LIKE '%$searchValue%'";
+        	
+    }else{
+
+	$query = "SELECT * FROM `quan_ly_de_tai` WHERE magv = '$id'";
+	
+    }
+    $result = mysqli_query($conn,$query);	
 
  ?>
 
@@ -30,7 +42,11 @@
 		<h2 style="color: #fff">quản lý giáo trình</h2>
 		<a class="btn btn-primary" href="./themgiaotrinh_user.php?id=<?php echo $id ?>">Thêm giáo trình</a>	
 		<a href="javascript:history.back()" class="btn btn-primary">Trở lại</a>
-		<div class="container-table">
+		<form action="" method="POST" class="form-inline" style="margin-top:20px ">
+            
+            <input name="search" class="form-control form-control-sm ml-3 w-75" type="text" placeholder="Search"
+                aria-label="Search">
+        </form>		<div class="container-table">
 			<table class="table table-striped">
 				<thead class="thead-table">
 					<tr>
